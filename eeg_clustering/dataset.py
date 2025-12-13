@@ -2,7 +2,7 @@ import torch
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
 
-def get_cifar10_loaders(batch_size=64, resize=64):
+def get_cifar10_loaders(batch_size=64, resize=16):
     transform = transforms.Compose([
         transforms.ToTensor(),
         transforms.Resize((resize, resize)),
@@ -15,4 +15,3 @@ def get_cifar10_loaders(batch_size=64, resize=64):
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
     
     return train_loader, test_loader
-
