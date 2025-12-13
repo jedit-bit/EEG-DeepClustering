@@ -1,9 +1,9 @@
 import torch
 
-def create_dictionary(loader, model, feature_dim=64, num_classes=10, device='cuda'):
+def create_dictionary(loader, model, num_classes=10, feature_dim=64, device='cpu'):
     model.eval()
     representatives = torch.zeros(num_classes, feature_dim, device=device)
-    found = torch.zeros(num_classes, dtype=torch.bool, device=device)
+    found = torch.zeros(num_classes, dtype=torch.bool)
     with torch.no_grad():
         for images, labels in loader:
             images, labels = images.to(device), labels.to(device)
