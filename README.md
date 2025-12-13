@@ -41,10 +41,10 @@ EEG-DeepClustering/
 │   ├─ model.py
 │   ├─ train.py
 │   └─ utils.py
-├─ images/             # Figures for README or notebooks
-├─ notebooks/          # Optional Jupyter notebooks
-├─ tests/              # Optional test scripts
-├─ data/               # Automatically downloaded CIFAR-10
+├─ images/            
+├─ notebooks/       
+├─ tests/             
+├─ data/              
 ├─ requirements.txt
 ├─ README.md
 └─ LICENSE
