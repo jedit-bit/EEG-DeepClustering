@@ -152,7 +152,7 @@ for epoch in range(epochs):
             total_samples += images.size(0)
             total_loss += loss.item() * images.size(0)
     
-    dictionary_features = create_dictionary(train_loader, φ)
+   # dictionary_features = create_dictionary(train_loader, φ)
     
     print(f"Epoch {epoch+1}/{epochs} - Loss: {total_loss/total_samples:.4f}, "
           f"Train Acc: {total_correct/total_samples:.4f}")
