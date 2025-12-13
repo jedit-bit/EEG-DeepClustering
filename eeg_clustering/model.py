@@ -29,7 +29,6 @@ class ClassifierHead(nn.Module):
     def __init__(self, feature_dim=64, num_classes=10):
         super().__init__()
         self.fc = nn.Linear(feature_dim, num_classes)
-        
     def forward(self, x):
         return self.fc(x)
 
@@ -41,7 +40,6 @@ class ClusteringHead(nn.Module):
             nn.ReLU(),
             nn.Linear(128, num_classes)
         )
-        
     def forward(self, feat, dictionary):
         diff = feat.unsqueeze(1) - dictionary.unsqueeze(0)
         diff = diff.view(diff.size(0), -1)
@@ -56,6 +54,5 @@ class DomainDiscriminator(nn.Module):
             nn.ReLU(),
             nn.Linear(64, num_domains + 1)
         )
-        
     def forward(self, x):
         return self.fc(x)
