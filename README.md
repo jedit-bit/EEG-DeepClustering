@@ -15,7 +15,7 @@ This repository contains a PyTorch implementation that simulates EEG-like signal
 
 This project is based on the following paper:
 
-Tabejamaat, M., Mohammadzade, H., Negin, F., & Bremond, F. (2025). *EEG classification with limited data: A deep clustering approach*. Pattern Recognition, 157, 110934. [Elsevier](https://www.sciencedirect.com/science/article/pii/S003132032500345X)
+Tabejamaat, M., Mohammadzade, H., Negin, F., & Bremond, F. (2025). *EEG classification with limited data: A deep clustering approach*. Pattern Recognition, 157, 110934. [Link](https://www.sciencedirect.com/science/article/pii/S003132032500345X)
 
 BibTeX citation:
 
