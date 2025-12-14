@@ -1,4 +1,5 @@
 # EEG Classification with Limited Data: A Deep Clustering Approach
+## Part of the emotion recognition project-2025
 
 **Non-official PyTorch implementation**
 
