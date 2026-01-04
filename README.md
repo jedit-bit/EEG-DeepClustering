@@ -1,7 +1,7 @@
 # EEG Classification with Limited Data: A Deep Clustering Approach
 ## Part of the emotion recognition project-2025
 
-**Non-official PyTorch implementation**
+**PyTorch implementation**
 
 This repository contains a PyTorch implementation that simulates EEG-like signals using CIFAR-10 images and performs classification with:
 
